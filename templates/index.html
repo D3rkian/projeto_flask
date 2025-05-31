@@ -12,9 +12,10 @@
 
 <body>
     <img src="{{ url_for('static', filename='um.jpg') }}" />
+    <h1>Informações de Contato para: {{ nome_exibido }}</h1>
     <p>
-        E-mail: {{ email }}
-        Telefone: {{ tel }}
+      E-mail: {{ email_exibido }}<br>
+      Telefone: {{ tel_exibido }}
     </p>
 </body>
 
