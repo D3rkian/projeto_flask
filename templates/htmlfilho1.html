@@ -1,18 +1,18 @@
-{% extends "base.html" %} {# PASSO 1: Herda tudo do base.html #}
+{% extends "base.html" %} 
 
-{# PASSO 2: Define o título específico para ESTA página #}
+
 {% block title %}
     Contato de {{ nome_exibido }}
 {% endblock %}
 
-{# PASSO 3 (Opcional): Se esta página tiver estilos CSS próprios, além do Bootstrap #}
+
 {% block head_extra_styles %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css1.css') }}">
 {% endblock %}
 
-{# PASSO 4: Coloca o conteúdo principal e ÚNICO desta página aqui #}
+
 {% block content %}
-    {# As classes como "text-center", "img-fluid", "mb-3" são do Bootstrap e ajudam na formatação #}
+    
     <div class="text-center">
         <img src="{{ url_for('static', filename='um.jpg') }}" alt="{{ nome_exibido }}" class="img-fluid rounded mb-3" style="max-width: 200px;" />
     </div>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="text-center mt-4">
-        {# Este link assume que você tem uma rota no Python chamada 'index' para sua página inicial #}
+        
         <a href="{{ url_for('index') }}" class="btn btn-info">Voltar para Início</a>
     </div>
 {% endblock %}
