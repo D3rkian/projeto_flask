@@ -12,9 +12,9 @@ def index():
 
 
 
-@app.route('/render')
+@app.route('/base')
 def render():
-    return render_template('index.html', email='alba@ifrn.edu.br', tel='(84) 99999-9999')
+    return render_template('base.html', email='alba@ifrn.edu.br', tel='(84) 99999-9999')
 
 
 @app.route('/<pessoa>')
@@ -35,7 +35,7 @@ def exibir_contato_de_alguem(pessoa):
 
 
 
-    return render_template('index.html', 
+    return render_template('htmlfilho1.html', 
                            nome_exibido=dados_pessoa['nome'], 
                            email_exibido=dados_pessoa['email'], 
                            tel_exibido=dados_pessoa['tel'])
