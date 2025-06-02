@@ -1,0 +1,35 @@
+/* Adicionar no static/baseef1.css (ou onde estiver o CSS específico desta página) */
+
+/* Estilo para os parágrafos desta página (se já não estiver definido de forma similar) */
+.content-block p {
+    color: #4a3d2f; /* Cor específica para os parágrafos desta página */
+    /* Outros estilos como font-size, margin, text-align podem ser herdados do baseecss.css 
+       ou sobrescritos aqui se necessário. */
+}
+
+/* Estilo para o novo botão de ação */
+.btn-custom-action {
+    background-color: #8b5e3c;  /* Cor marrom, como no seu link original */
+    color: #ffffff;             /* Texto branco */
+    padding: 10px 25px;         /* Preenchimento interno */
+    border-radius: 5px;         /* Bordas arredondadas */
+    text-decoration: none;      /* Sem sublinhado */
+    font-size: 1rem;            /* Tamanho da fonte */
+    font-weight: 500;           /* Peso da fonte */
+    border: none;               /* Sem borda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Transições suaves */
+}
+
+.btn-custom-action:hover, 
+.btn-custom-action:focus {
+    background-color: #70492f;  /* Cor mais escura no hover/focus */
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px); /* Efeito de leve elevação */
+}
+
+.btn-custom-action:active {
+    transform: translateY(0px); /* Remove elevação ao clicar */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
