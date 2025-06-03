@@ -1,22 +1,31 @@
-{% extends "basee.html" %}
+{% extends "basee.html" %} 
 
-{% block title %}Inicial - Animais{% endblock %}
+{% block title %}Inicial - Animais{% endblock %} 
 
-{% block page_title %}Animal{% endblock %}
+{% block page_title %}Animal{% endblock %} 
 
-{% block extra_head_css %}
-    {{ super() }} 
-    <link rel="stylesheet" href="{{ url_for('static', filename='baseef1.css') }}">
+{% block extra_head_css %} 
+    {{ super() }}  
+    <link rel="stylesheet" href="{{ url_for('static', filename='baseef1.css') }}"> 
+{% endblock %} 
+
+{% block content %} 
+    {# Div vazia removida #}
+
+    {# Novo Título Adicionado #}
+    <h3 class="text-center mb-3 animal-section-title">Animais</h3>
+
+    {# Parágrafos com tamanho de fonte aumentado e texto justificado #}
+    <p class="fs-5 text-justify">
+        A preservação da vida selvagem é essencial não apenas para o equilíbrio dos ecossistemas, mas também para a saúde do nosso próprio planeta. Cada criatura desempenha um papel fundamental no funcionamento natural do ambiente, desde a polinização de plantas essenciais para a nossa alimentação até o controle de pragas que afetam a agricultura.
+    </p> 
+    <p class="fs-5 text-justify">
+        A perda de uma espécie, mesmo que pareça insignificante, pode desencadear uma reação em cadeia, afetando diretamente a biodiversidade e a estabilidade dos ecossistemas.
+    </p> 
+     
+    <div class="text-center mt-4 mb-2">  
+        <a href="{{ url_for('index') }}" class="btn btn-custom-action fw-bold">  
+             Mais Sobre  
+        </a> 
+    </div> 
 {% endblock %}
-
-{% block content %}
-    <p>A preservação da vida selvagem é essencial não apenas para o equilíbrio dos ecossistemas, mas também para a saúde do nosso próprio planeta. Cada criatura desempenha um papel fundamental no funcionamento natural do ambiente, desde a polinização de plantas essenciais para a nossa alimentação até o controle de pragas que afetam a agricultura.</p>
-    <p>A perda de uma espécie, mesmo que pareça insignificante, pode desencadear uma reação em cadeia, afetando diretamente a biodiversidade e a estabilidade dos ecossistemas.</p>
-    
-    <div class="text-center mt-4 mb-2"> 
-        <a href="{{ url_for('index') }}" class="btn btn-custom-action fw-bold"> 
-            Saiba Mais Sobre Isso
-        </a>
-    </div>
-{% endblock %}
-

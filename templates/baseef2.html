@@ -1,0 +1,77 @@
+{% extends "basee.html" %}
+
+{% block title %}Galeria de Animais em Extinção{% endblock %}
+
+{% block page_title %}Animais em Extinção{% endblock %}
+
+{% block extra_head_css %}
+    {{ super() }}
+    <link rel="stylesheet" >
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-4"> 
+    <p class="text-center lead mb-4">Conheça alguns animais e suas características:</p>
+
+    <div class="row">
+        {# Animal 1: Axolote #}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+            <img src="{{ url_for('static', filename='axolote.jpg') }}" class="img-fluid rounded animal-image mb-2" alt="Axolote">
+            <h5 class="animal-name fw-bold">Axolote</h5>
+            <p class="animal-description text-justify fs-5 px-2 fw-bold">
+                O axolote (Ambystoma mexicanum) é um anfíbio aquático nativo do México, conhecido por manter características larvais na fase adulta, como brânquias externas ao redor da cabeça. Este fenômeno, chamado neotenia, permite que o axolote retenha uma aparência juvenil durante toda a vida. Além disso, destaca-se por sua notável capacidade de regeneração, podendo reconstruir membros, órgãos e até partes do sistema nervoso.
+            </p>
+        </div>
+
+        {# Animal 2: Lince Ibérico #}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+            <img src="{{ url_for('static', filename='Lince ibérico.jpg') }}" class="img-fluid rounded animal-image mb-2" alt="Lince ibérico">
+            <h5 class="animal-name fw-bold">Lince ibérico</h5>
+            <p class="animal-description text-justify fs-5 px-2 fw-bold">
+                O Lince Ibérico (Lynx pardinus ) é o felino mais ameaçado do mundo e o carnívoro mais ameaçado da Europa, com uma população estimada em cerca de 1.000 indivíduos em ambiente natural. Este animal apresenta características marcantes, como orelhas com tufos de pelos, pernas longas, cauda curta e um colar de pelo semelhante a uma barba, além de um padrão de pintas negras que varia entre os indivíduos.
+            </p>
+        </div>
+
+        {# Animal 3: Urso Polar #}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+            <img src="{{ url_for('static', filename='Urso polar.jpg') }}" class="img-fluid rounded animal-image mb-2" alt="Urso polar">
+            <h5 class="animal-name fw-bold">Urso polar</h5>
+            <p class="animal-description text-justify fs-5 px-2 fw-bold">
+                O urso-polar (Ursus maritimus ), também conhecido como urso-branco , é uma espécie de mamífero carnívoro da família Ursidae, encontrada principalmente no Círculo Polar Ártico e áreas vizinhas. É o maior de todos os ursos existentes no mundo, podendo atingir até 3 metros de comprimento e pesar até 720 kg , com uma expectativa de vida na natureza de cerca de 25 anos.
+            </p>
+        </div>
+
+        {# Animal 4: Mandril #}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4"> {# Adicionando col-lg-3 para 4 colunas em telas grandes #}
+            <img src="{{ url_for('static', filename='mandrill.jpg') }}" class="img-fluid rounded animal-image mb-2" alt="Mandril">
+            <h5 class="animal-name fw-bold">Mandril</h5>
+            <p class="animal-description text-justify fs-5 px-2 fw-bold">
+                O mandril é um primata impressionante, conhecido por formar os maiores grupos sociais entre primatas não humanos, com até 1.300 indivíduos. Sua aparência marcante, com rostos coloridos e olhos expressivos, reflete seu status social e estado sexual, sendo a coloração mais espetacular entre os mamíferos. Essa beleza, no entanto, atrai ameaças: sua carne é considerada uma iguaria na África Ocidental e é alvo de contrabando para a Europa.
+            </p>
+        </div>
+        
+        {# Animal 5: Araras Militares #}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4"> {# Adicionando col-lg-3 #}
+            <img src="{{ url_for('static', filename='Araras Militares.jpg') }}" class="img-fluid rounded animal-image mb-2" alt="Araras Militares">
+            <h5 class="animal-name fw-bold">Araras Militares</h5>
+            <p class="animal-description text-justify fs-5 px-2 fw-bold">
+                As Araras-militares (Ara militaris ) são aves impressionantes, conhecidas por sua plumagem colorida e comportamento social. Elas possuem uma coloração predominantemente verde-oliva, com toques de azul, amarelo e vermelho, que as tornam facilmente reconhecíveis.
+            </p>
+        </div>
+
+
+    </div> 
+
+    <hr class="my-5">
+
+    <section class="text-center p-3 mb-4 rounded bg-light-subtle border ">
+        <h3 class="h4 fw-bold text-dark">Informações Adicionais</h3>
+        <p>
+            <a href="https://www.nationalgeographic.pt/mundo-animal/fotogaleria-animais-vias-extincao_4329?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="link-dark fw-medium">
+                National Geographic - Animais em Vias de Extinção
+            </a>
+        </p>
+    </section>
+
+</div> 
+{% endblock %}

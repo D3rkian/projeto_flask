@@ -1,35 +1,44 @@
-/* Adicionar no static/baseef1.css (ou onde estiver o CSS específico desta página) */
+/* Adicionar/Modificar no static/baseef1.css */
 
-/* Estilo para os parágrafos desta página (se já não estiver definido de forma similar) */
+/* Estilo para os parágrafos (cor específica - JÁ EXISTENTE, MANTENHA) */
+/* Esta regra afeta os <p> porque eles estão dentro do .content-block do template base */
 .content-block p {
     color: #4a3d2f; /* Cor específica para os parágrafos desta página */
-    /* Outros estilos como font-size, margin, text-align podem ser herdados do baseecss.css 
-       ou sobrescritos aqui se necessário. */
+    /* O tamanho da fonte agora é controlado pela classe .fs-5 no HTML */
+    /* O alinhamento agora é controlado pela classe .text-justify no HTML */
 }
 
-/* Estilo para o novo botão de ação */
+/* Opcional: Estilo para o novo título "Animais" se precisar de mais customização */
+.animal-section-title {
+    /* Exemplo: se quiser uma cor diferente ou outra formatação */
+    /* color: #2c1e0f; */
+    font-weight: bold; /* Ou use a classe .fw-bold no HTML */
+    text-transform: uppercase; /* Ou use a classe .text-uppercase no HTML */
+}
+
+
 .btn-custom-action {
-    background-color: #8b5e3c;  /* Cor marrom, como no seu link original */
-    color: #ffffff;             /* Texto branco */
-    padding: 10px 25px;         /* Preenchimento interno */
-    border-radius: 5px;         /* Bordas arredondadas */
-    text-decoration: none;      /* Sem sublinhado */
-    font-size: 1rem;            /* Tamanho da fonte */
-    font-weight: 500;           /* Peso da fonte */
-    border: none;               /* Sem borda */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out; /* Transições suaves */
+    background-color: #8b5e3c;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2rem;
+
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .btn-custom-action:hover, 
 .btn-custom-action:focus {
-    background-color: #70492f;  /* Cor mais escura no hover/focus */
+    background-color: #70492f;
     color: #ffffff;
     text-decoration: none;
-    transform: translateY(-1px); /* Efeito de leve elevação */
+    transform: translateY(-1px);
 }
 
 .btn-custom-action:active {
-    transform: translateY(0px); /* Remove elevação ao clicar */
+    transform: translateY(0px);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }

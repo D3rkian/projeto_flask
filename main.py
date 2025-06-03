@@ -9,7 +9,6 @@ def index():
 
     return 'Mundo!'
 
-
 # @app.route('/base')
 # def render():
 #    return render_template('base.html', email='alba@ifrn.edu.br', tel='(84) 99999-9999')
@@ -17,6 +16,10 @@ def index():
 @app.route('/basee')
 def render_basee():
     return render_template('baseef1.html')
+
+@app.route('/baseee')
+def render_baseee():
+    return render_template('baseef2.html')
 
 
 #@app.route('/<pessoa>')
