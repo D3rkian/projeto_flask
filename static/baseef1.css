@@ -1,20 +1,12 @@
-/* Adicionar/Modificar no static/baseef1.css */
 
-/* Estilo para os parágrafos (cor específica - JÁ EXISTENTE, MANTENHA) */
-/* Esta regra afeta os <p> porque eles estão dentro do .content-block do template base */
+
+
 .content-block p {
-    color: #4a3d2f; /* Cor específica para os parágrafos desta página */
-    /* O tamanho da fonte agora é controlado pela classe .fs-5 no HTML */
-    /* O alinhamento agora é controlado pela classe .text-justify no HTML */
+    color: #4a3d2f; 
 }
 
-/* Opcional: Estilo para o novo título "Animais" se precisar de mais customização */
-.animal-section-title {
-    /* Exemplo: se quiser uma cor diferente ou outra formatação */
-    /* color: #2c1e0f; */
-    font-weight: bold; /* Ou use a classe .fw-bold no HTML */
-    text-transform: uppercase; /* Ou use a classe .text-uppercase no HTML */
-}
+
+
 
 
 .btn-custom-action {

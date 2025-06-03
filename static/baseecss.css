@@ -1,76 +1,53 @@
-/* static/baseecss.css */
+
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #3a2d1f; /* Cor de fundo escura do body */
-    color: #e0e0e0; /* Cor de texto clara para o body (para contraste com o fundo escuro) */
+    background-color: #3a2d1f; 
+    color: #e0e0e0; 
     margin: 0;
     
    
-    /* Ajuste os valores abaixo (70px) para a altura real da sua navbar e rodapé! */
+    
     padding-top: 70px; 
     padding-bottom: 70px; 
-    /* As classes d-flex flex-column min-vh-100 no <body> do HTML cuidam do layout principal */
+    
 }
 
-/* ATENÇÃO: A classe .custom-container abaixo, se usada no seu basee.html
-   em volta do {% block content %}, é o que causa o efeito de "conteúdo espremido"
-   devido ao 'max-width: 700px;'.
-   Para conteúdo mais largo (de ponta a ponta), o basee.html precisa ser alterado
-   para não usar este container fixo em volta do bloco de conteúdo principal.
-*/
-.custom-container {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    max-width: 700px; /* <<< FAZ O CONTEÚDO FICAR "ESPREMIDO" */
-    width: 100%; /* Redundante se usado com a classe .container do Bootstrap */
-    margin: auto; /* Redundante se usado com a classe .container do Bootstrap */
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: #3a2d1f; /* Cor escura para o texto dentro deste container específico */
-}
+
 
 h1.custom-title {
     font-size: 24px;
     text-transform: uppercase;
-    /* padding-bottom: 1px;  Pode ser substituído por margem Bootstrap se preferir */
+    
     color: #3a2d1f; 
-    margin-bottom: 0.5rem; /* Bootstrap .mb-2 */
+
 }
 
 hr {
     border-top: 1px solid #8b5e3c;
-    opacity: 0.75; /* Bootstrap padrão é 0.25, então isso é uma customização */
+    opacity: 0.75; 
 }
 
-/* Estilo padrão para parágrafos dentro do .content-block (que está dentro do .custom-container) */
-/* Se .custom-container for removido do base, esta regra pode precisar ser mais genérica ou aplicada de outra forma */
+
 .content-block p {
     font-size: 18px;
-    margin: 20px 0; /* Equivalente a .my-3 ou .my-4 do Bootstrap, aproximadamente */
-    text-align: justify; /* Pode usar classe .text-justify do Bootstrap nos <p> */
+
+  
     color: #3a2d1f; 
 }
 
-/* Barra de Navegação */
+
 .custom-navbar {
-    border-bottom: 1px solid #dee2e6; /* Borda sutil (customização) */
+    border-bottom: 1px solid #dee2e6;
 }
 
 .custom-navbar .navbar-brand {
-    color: #3a2d1f !important; /* Adicionado !important para garantir sobreposição se necessário, ou aumente especificidade */
-    font-weight: bold;       /* Pode usar classe .fw-bold no <a> */
+    color: #3a2d1f !important; 
 }
 
-/* Rodapé */
+
 .custom-footer {
-    /* background-color é controlado por .bg-light no HTML */
-    /* color: #3a2d1f; */ /* Definido aqui se quiser sobrescrever o padrão de .bg-light */
-    /* padding é controlado por .p-3 no HTML */
-    border-top: 1px solid #dee2e6; /* Borda sutil no topo do rodapé (customização) */
+    
+    border-top: 1px solid #dee2e6; 
 }
 
-/* .custom-footer p {
-    /* margin-bottom: 0; -- Removido, pois .mb-0 no HTML já faz isso */
-/* } */
