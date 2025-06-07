@@ -25,6 +25,9 @@ def render_basee():
 def render_baseee():
     return render_template('baseef2.html')
 
+@app.route('/baseeee')
+def render_baseeee():
+    return render_template('fim.html')
 
 #@app.route('/<pessoa>')
 #def exibir_contato_de_alguem(pessoa):

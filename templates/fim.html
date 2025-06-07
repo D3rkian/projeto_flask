@@ -1,0 +1,17 @@
+{% extends "basee.html" %}
+
+{% block content %}
+<div class="container ">  <h2 class="text-center ">FIM</h2>
+
+    <div style="max-width: 1200px; margin: auto;">
+
+        <div class="ratio ratio-16x9">
+
+            <video class="ratio-item" controls autoplay muted loop> <source src="{{ url_for('static', filename='BRATlas (1920p_30fps_H264-128kbit_AAC).mp4') }}" type="video/mp4">
+                      
+            </video>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

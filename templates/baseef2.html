@@ -4,10 +4,6 @@
 
 {% block page_title %}Animais em Extinção{% endblock %}
 
-{% block extra_head_css %}
-    {{ super() }}
-    <link rel="stylesheet" >
-{% endblock %}
 
 {% block content %}
 <div class="container-fluid mt-4"> 
@@ -61,17 +57,21 @@
 
 
     </div> 
-
-    <hr class="my-5">
-
-    <section class="text-center p-3 mb-4 rounded bg-light-subtle border ">
+ 
+    <section class="text-center p-1 mb-4 rounded bg-light-subtle border ">
+          
         <h3 class="h4 fw-bold text-dark">Informações Adicionais</h3>
         <p>
             <a href="https://www.nationalgeographic.pt/mundo-animal/fotogaleria-animais-vias-extincao_4329?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="link-dark fw-medium">
                 National Geographic - Animais em Vias de Extinção
             </a>
         </p>
+    <hr class="my-2">
+    <div class="text-center" >  
+<a class="fw-bold fs-2" style="color: #3a2d1f;" href="{{ url_for('render_baseeee') }}"> ATÉ A PRÓXIMA</a>
+  </div >
     </section>
 
 </div> 
+
 {% endblock %}
